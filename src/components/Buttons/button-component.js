@@ -23,6 +23,7 @@ class Button extends Component {
   //Removes EL before component is destroyed.
   componentWillUnmount() {
     window.removeEventListener("keydown", this._playSound);
+    
   }
 
   _playSound(event) {
