@@ -1,9 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
+
 
 import "./App.css";
 
-function App() {
-  return <div>Hello World</div>;
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
+  
+
+  render() {
+
+
+    return (
+      <div>
+        <h1>DrumKit Project</h1>
+        
+      </div>
+    );
+  }
 }
 
 export default App;
+
+
