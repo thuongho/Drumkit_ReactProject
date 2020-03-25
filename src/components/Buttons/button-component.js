@@ -1,9 +1,8 @@
 import React, { Component, ReactPropTypes } from "react";
-
-import "./App.css";
+import "./button-component-style.css";
 
 //App creates the Button Components
-class App extends Component {
+class Button extends Component {
   constructor() {
     super();
 
@@ -57,13 +56,6 @@ class App extends Component {
   }
 }
 
-DrumKit.ReactPropTypes = {
-  className: PropTypes.string,
-  style: PropTypes.object,
-  bigText: PropTypes.string.isRequired,
-  smallText: PropTypes.string.isRequired,
-  code: PropTypes.number.isRequired,
-  source: PropTypes.string.isRequired
-};
 
-export default App;
+
+export default Button;
