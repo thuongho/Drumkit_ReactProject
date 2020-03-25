@@ -3,18 +3,27 @@ import Button from './Buttons/button-component';
 import './Home.css';
 
 //Import the Sound
+// @ts-ignore
 import clap from '../sounds/clap.wav';
+// @ts-ignore
 import hihat from '../sounds/hihat.wav';
+// @ts-ignore
 import kick from '../sounds/kick.wav';
+// @ts-ignore
 import openhat from '../sounds/openhat.wav';
+// @ts-ignore
 import boom from '../sounds/boom.wav';
+// @ts-ignore
 import ride from '../sounds/ride.wav';
+// @ts-ignore
 import snare from '../sounds/snare.wav';
+// @ts-ignore
 import tom from '../sounds/tom.wav';
+// @ts-ignore
 import tink from '../sounds/tink.wav';
 
 
-class Home extends Component {
+export default class Home extends Component {
     render() {
         return (
             <div>
@@ -92,4 +101,3 @@ class Home extends Component {
     }
 }
 
-export default Home

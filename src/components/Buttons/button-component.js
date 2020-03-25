@@ -3,8 +3,8 @@ import "./button-component-style.css";
 
 //App creates the Button Components
 class Button extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       isPlaying: false,
