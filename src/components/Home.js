@@ -25,358 +25,445 @@ import tink from "../sounds/tink.wav";
 export default class Home extends Component {
   render() {
     return (
-      <div className="drumGrid">
-        <div className="one">
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
+      <div>
+        <div className="drumGrid">
+          <div className="one">
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+          </div>
+          <div className="two">
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+          </div>
+          <div className="three">
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+          </div>
+          <div className="four">
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+          </div>
         </div>
-        <div className="two">
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-        </div>
-        <div className="three">
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-        </div>
-        <div className="four">
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
-          <div className="numGrid">
-          <Button
-            className="drumKit clap"
-            smallText="1"
-            bigText="clap"
-            code={65}
-            source={clap}
-          />
+        <div className="numGrid">
+          <div className="numOne">
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+          </div>
+          <div className="numTwo">
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+          </div>
+          <div className="numThree">
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+          </div>
+          <div className="numFour">
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
+            <Button
+              className="drumKit clap"
+              smallText="1"
+              bigText="clap"
+              code={65}
+              source={clap}
+            />
           </div>
         </div>
       </div>

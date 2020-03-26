@@ -5,10 +5,21 @@
 .five,
 .six {
   display: flex;
+  width: 80%;
+  float: left;
+}
+
+.numOne,
+.numTwo,
+.numThree,
+.numFour {
+  display: flex;
   
 }
 
 .numGrid {
   display: flex;
+  width: 20%;
+  flex-wrap: wrap;
 }
 
