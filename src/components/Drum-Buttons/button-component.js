@@ -27,7 +27,7 @@ class Button extends Component {
   }
 
   _playSound(event) {
-    if (event.keyCode === this.props.code || event.type === "click") {
+    if (event.keyCode === this.props.code || event.type === "click") { // Checks if the button pressed has the same source 
       this.setState({ isPlaying: true });
       this.Audio.currentTime = 0;
       this.Audio.play();
