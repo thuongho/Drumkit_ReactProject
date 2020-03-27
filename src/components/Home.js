@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "./Drum-Buttons/button-component";
+import Playlist from "../components/Drum-TrackPlaylist/playlist-component";
 import "./Home.css";
 
 //Import the Sound
@@ -466,6 +467,7 @@ export default class Home extends Component {
             />
           </div>
         </div>
+        <Playlist />
       </div>
     );
   }
