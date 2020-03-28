@@ -17,6 +17,10 @@
   
 }
 
+.displayGrid {
+  
+}
+
 .numGrid {
   display: flex;
   width: 20%;

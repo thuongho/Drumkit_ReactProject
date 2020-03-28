@@ -1,0 +1,14 @@
+.TrackPanel {
+    background-color: lightblue;
+    display: flex;
+    
+}
+
+.TrackArea {
+    height: 800px;
+}
+
+
+.PlaylistPanel {
+    height: 80%;
+}

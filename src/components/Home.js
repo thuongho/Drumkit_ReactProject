@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Button from "./Drum-Buttons/button-component";
 import Playlist from "../components/Drum-TrackPlaylist/playlist-component";
+import TopButton from "./Top-Bottons/topbutton-component";
 import "./Home.css";
 
 //Import the Sound
@@ -27,7 +28,8 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <div className="drumGrid">
+        <TopButton />
+        <div className="displayGrid" >
           <div className="one">
             <Button
               className="drumKit clap"
@@ -373,6 +375,7 @@ export default class Home extends Component {
             />
           </div>
         </div>
+
         <div className="numGrid">
           <div className="numOne">
             <Button
