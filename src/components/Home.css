@@ -18,12 +18,16 @@
 }
 
 .displayGrid {
-  
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
 .numGrid {
   display: flex;
   width: 20%;
   flex-wrap: wrap;
+  
 }
 
