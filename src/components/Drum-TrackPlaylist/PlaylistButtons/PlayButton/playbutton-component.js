@@ -1,9 +1,13 @@
 import React from 'react';
 
 export const PlayButton = props => {
+
     return (
-        <button>
+        <button
+        onClick={props.testFunction}
+        >
             Play Button
         </button>
     )
+    
 }

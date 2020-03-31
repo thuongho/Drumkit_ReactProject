@@ -34,6 +34,7 @@ class Button extends Component {
     }
   }
 
+
   _onTransitionEnd(event) {
     this.setState({ isPlaying: false });
   }

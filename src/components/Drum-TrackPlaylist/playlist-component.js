@@ -13,24 +13,38 @@ import "./playlist-component.css";
 export default class Playlist extends Component {
   constructor(props) {
     super(props);
+    this.createConsole = this.createConsole.bind(this);
+    
+    this.state = {
+      reset: false,
+      record: false,
+      play: false,
+      save: false,
+      download: false,
+    };
   }
+
+  createConsole() {
+    this.setState((state) => ({
+        play: !state.play, 
+    }));
+  }
+
 
   render() {
     return (
-      <div className="TrackArea">
-        <div className="TrackPanel">
+      <div className="trackArea">
+        <div className="trackButtonPanel">
           <h1>Button Area</h1>
           <ResetButton />
           <RecordButton />
-          <PlayButton />
+          <PlayButton testFunction={this.createConsole} />
           <SaveButton />
           <DownloadButton />
           <DrumKitSettings />
           <LoopsPanel />
         </div>
-        <div className = "PlaylistPanel">
-          <PlayListPanel />
-        </div>
+        <PlayListPanel />
       </div>
     );
   }

@@ -1,15 +1,12 @@
-.TrackPanel {
+.trackButtonPanel {
     background-color: lightblue;
     display: flex;
     
 }
 
-.TrackArea {
-    
+.trackArea {
+    width: 100%;
     float: left;
 }
 
 
-.PlaylistPanel {
-    height: 80%;
-}

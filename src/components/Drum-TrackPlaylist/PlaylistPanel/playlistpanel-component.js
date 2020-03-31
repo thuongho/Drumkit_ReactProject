@@ -7,10 +7,14 @@ export default class PlayListPanel extends Component {
         super(props);
     }
 
+
     render() {
         return (
-            <div>
+            <div className="playlist-Panel">
                 <h1>Playlist Panel</h1>
+                <div className="progressWidth"></div>
+                <div className="progressLine"></div>
+                <div className="loader"> </div>
             </div>
         )
     }

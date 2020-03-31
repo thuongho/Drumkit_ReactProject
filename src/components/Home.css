@@ -1,3 +1,7 @@
+.main {
+  width: 100%;
+}
+
 .one,
 .two,
 .three,
@@ -28,6 +32,5 @@
   display: flex;
   width: 20%;
   flex-wrap: wrap;
-  
 }
 

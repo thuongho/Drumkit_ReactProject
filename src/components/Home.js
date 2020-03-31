@@ -117,7 +117,7 @@ import ugh from "../sounds/ugh.mp3";
 export default class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="main">
         <TopButton />
         <div className="displayGrid">
           <div className="one">
