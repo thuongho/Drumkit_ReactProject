@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "./Drum-Buttons/button-component";
-import Playlist from "../components/Drum-TrackPlaylist/playlist-component";
+import Playlist from "./Drum-TrackPlaylist/playlist-component";
 import TopButton from "./Top-Bottons/topbutton-component";
 import "./Home.css";
 
