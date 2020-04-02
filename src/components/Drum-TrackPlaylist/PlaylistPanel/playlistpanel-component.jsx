@@ -6,6 +6,8 @@ export default class PlayListPanel extends Component {
   constructor(props) {
     super(props);
 
+    this.changeWidth = this.changeWidth.bind(this);
+
     this.state = {
       checkValid: this.props.playState,
       count: 0,
@@ -19,9 +21,7 @@ export default class PlayListPanel extends Component {
   }
 
   changeWidth() {
-    if (this.state.checkValid == false) {
-      this.setState({ count: 4 });
-    }
+    this.setState({ count: 2 });
   }
 
   render() {
