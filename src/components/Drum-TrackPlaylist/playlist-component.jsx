@@ -27,7 +27,7 @@ export default class Playlist extends Component {
   createConsole() {
     this.setState((state) => ({
         play: !state.play, 
-    }));
+    }), () => console.log(this.state.play))
   }
 
 
@@ -44,7 +44,7 @@ export default class Playlist extends Component {
           <DrumKitSettings />
           <LoopsPanel />
         </div>
-        <PlayListPanel />
+        <PlayListPanel playState = {this.state.play} />
       </div>
     );
   }
