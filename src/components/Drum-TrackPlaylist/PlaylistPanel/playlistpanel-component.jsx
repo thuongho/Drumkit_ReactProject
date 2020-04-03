@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import { ProgressWidth } from "../PlaylistPanel/ProgressWidth/progresswidth-component";
 
 import "./playlistpanel-component.css";
 
@@ -22,7 +21,7 @@ export default class PlayListPanel extends Component {
   render() {
     return (
       <div className="playlist-Panel">
-        <ProgressWidth  increaseWidth={this.state.checkValid}/>
+        <div className="progressWidth" style={{width: `${this.props.progress}%`}}></div>
         <div className="progressLine"></div>
         <div className="loader"> </div>
       </div>
