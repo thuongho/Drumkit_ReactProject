@@ -14,7 +14,7 @@ export default class Playlist extends Component {
   constructor(props) {
     super(props);
     this.createConsole = this.createConsole.bind(this);
-    
+
     this.state = {
       reset: false,
       record: false,
@@ -25,17 +25,43 @@ export default class Playlist extends Component {
     };
   }
 
+  componentDidUpdate() {
+    if (this.state.progress <= 100) {
+     setTimeout(() => this.setState({
+       progress: this.state.progress + 1
+     }), 20)
+    }
+  };
+  
+
   createConsole() {
-    this.setState((state) => ({
-        play: !state.play, 
-    }), () => console.log(this.state.play))
+    this.setState(
+      (state) => ({
+        play: !state.play,
+      }),
+      () => console.log(this.state.play)
+    );
   }
 
   setProgress() {
-    this.setState((state) => ({
-        progress: state.progress + 1
-    }), () => console.log(this.state.progress))
+    this.setState(
+      (state) => ({
+        progress: state.progress + 1,
+      }),
+      () => console.log(this.state.progress)
+    );
   }
+
+  // setAutoWidth = () => {
+  //   if (this.state.progress <= 100) {
+  //     this.setState((state) => ({
+  //       progress: state.progress + 1,
+  //     })),
+  //       console.log(this.state.progress);
+  //   } else {
+  //     this.setState({ progress: 0 });
+  //   }
+  // };
 
   render() {
     return (
@@ -44,13 +70,24 @@ export default class Playlist extends Component {
           <h1>Button Area</h1>
           <ResetButton />
           <RecordButton />
-          <button className="playButton" onClick={() => {this.createConsole(); this.setProgress()}}>Play Button</button>
+          <button
+            className="playButton"
+            onClick={() => {
+              this.createConsole();
+              this.setProgress();
+            }}
+          >
+            Play Button
+          </button>
           <SaveButton />
           <DownloadButton />
           <DrumKitSettings />
           <LoopsPanel />
         </div>
-        <PlayListPanel playState = {this.state.play} progress = {this.state.progress} />
+        <PlayListPanel
+          playState={this.state.play}
+          progress={this.state.progress}
+        />
       </div>
     );
   }
