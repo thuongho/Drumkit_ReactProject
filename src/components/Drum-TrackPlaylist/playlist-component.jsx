@@ -37,6 +37,8 @@ export default class Playlist extends Component {
     }), () => console.log(this.state.progress))
   }
 
+  
+
   render() {
     return (
       <div className="trackArea">
