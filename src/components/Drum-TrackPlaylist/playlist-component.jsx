@@ -27,12 +27,21 @@ export default class Playlist extends Component {
 
   componentDidUpdate() {
     if (this.state.progress <= 100) {
-     setTimeout(() => this.setState({
-       progress: this.state.progress + 1
-     }), 20)
-    } 
-  };
-  
+      setTimeout(
+        () =>
+          this.setState({
+            progress: this.state.progress + 1,
+          }),
+        20
+      );
+    } else {
+      setTimeout(() =>
+        this.setState({
+          progress: 0,
+        })
+      );
+    }
+  }
 
   createConsole() {
     this.setState(
@@ -51,8 +60,6 @@ export default class Playlist extends Component {
       () => console.log(this.state.progress)
     );
   }
-
-  
 
   render() {
     return (
