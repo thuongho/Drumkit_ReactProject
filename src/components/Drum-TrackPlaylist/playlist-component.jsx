@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ResetButton } from "./PlaylistButtons/ResetButton/resetbutton-component";
+// import { ResetButton } from "./PlaylistButtons/ResetButton/resetbutton-component";
 import { RecordButton } from "./PlaylistButtons/RecordButton/recordbutton-component";
 
 import { SaveButton } from "./PlaylistButtons/SaveButton/savebutton-component";
@@ -13,7 +13,7 @@ import "./playlist-component.css";
 export default class Playlist extends Component {
   constructor(props) {
     super(props);
-    this.createConsole = this.createConsole.bind(this);
+    this.clickPlayButton = this.clickPlayButton.bind(this);
 
     this.state = {
       reset: false,
@@ -26,24 +26,23 @@ export default class Playlist extends Component {
   }
 
   componentDidUpdate() {
-    if (this.state.progress <= 100 && this.state.play) {
-      setTimeout(
+    if (this.state.progress < 100 && this.state.play) {
+      let t = setTimeout(
         () =>
-          this.setState({
-            progress: this.state.progress + 1,
-          }),
+          this.setState(
+            (state) => ({
+              progress: state.progress + 1,
+            }),
+            () => {
+              console.log(this.state.progress);
+            }
+          ),
         40
-      );
-    } else {
-      setTimeout(() =>
-        this.setState({
-          progress: 0,
-        })
       );
     }
   }
 
-  createConsole() {
+  clickPlayButton() {
     this.setState(
       (state) => ({
         play: !state.play,
@@ -52,24 +51,32 @@ export default class Playlist extends Component {
     );
   }
 
-  // setProgress() {
-  //   this.setState(
-  //     {progress: 0}
-  //   )
-  // }
+  clickResetButton() {
+    this.setState({
+      reset: true,
+      play: false,
+      progress: 0,
+    });
+  }
 
   render() {
     return (
       <div className="trackArea">
         <div className="trackButtonPanel">
           <h1>Button Area</h1>
-          <ResetButton />
+          <button
+            className="resetButton"
+            onClick={() => {
+              this.clickResetButton();
+            }}
+          >
+            Reset Button
+          </button>
           <RecordButton />
           <button
             className="playButton"
             onClick={() => {
-              this.createConsole();
-              // this.setProgress();
+              this.clickPlayButton();
             }}
           >
             Play Button
