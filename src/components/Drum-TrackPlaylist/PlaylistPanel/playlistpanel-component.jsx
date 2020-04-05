@@ -24,7 +24,10 @@ export default class PlayListPanel extends Component {
           className="progressWidth"
           style={{ width: `${this.props.progress}%` }}
         ></div>
-        <div className="progressLine"></div>
+        <div
+          className="progressLine"
+          style={{ left: `${this.props.progress}%` }}
+        ></div>
         <div className="loader"> </div>
       </div>
     );
