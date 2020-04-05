@@ -27,7 +27,7 @@ export default class Playlist extends Component {
 
   componentDidUpdate() {
     if (this.state.progress < 100 && this.state.play) {
-      let t = setTimeout(
+      setTimeout(
         () =>
           this.setState(
             (state) => ({
@@ -42,6 +42,7 @@ export default class Playlist extends Component {
     }
   }
 
+  //When user hits the Play Button
   clickPlayButton() {
     this.setState(
       (state) => ({
@@ -51,6 +52,7 @@ export default class Playlist extends Component {
     );
   }
 
+  //When user hits the Reset Button
   clickResetButton() {
     this.setState({
       reset: true,
