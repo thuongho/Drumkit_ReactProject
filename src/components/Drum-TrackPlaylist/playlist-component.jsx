@@ -45,7 +45,7 @@ export default class Playlist extends Component {
       );
     }
 
-    // Due to how componentDidUpdate works, this makes sure that after it runs, it does not set progress to 1
+    // Due to how componentDidUpdate works, this makes sure that after it runs, it does not set progress to 1git 
     if (this.state.progress === 1 && this.state.reset) {
       this.setState(
         (state) => ({

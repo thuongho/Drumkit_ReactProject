@@ -1,6 +1,7 @@
 .playlist-Panel {
   height: 500px;
   width: 100%;
+  display: relative;
 }
 
 .progressWidth {
@@ -8,4 +9,15 @@
   height: 100%;
   left: 0;
   top: 0;
+  
+}
+
+.progressLine {
+  left: 50%;
+  background: blue;
+  z-index: 4;
+  height: 100%;
+  
+  top: 0;
+  width: 3px;
 }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 import "./playlistpanel-component.css";
 
 export default class PlayListPanel extends Component {
@@ -21,12 +20,13 @@ export default class PlayListPanel extends Component {
   render() {
     return (
       <div className="playlist-Panel">
-        <div className="progressWidth" style={{width: `${this.props.progress}%`}}></div>
+        <div
+          className="progressWidth"
+          style={{ width: `${this.props.progress}%` }}
+        ></div>
         <div className="progressLine"></div>
         <div className="loader"> </div>
       </div>
     );
   }
 }
-
-
