@@ -26,7 +26,11 @@ export default class Playlist extends Component {
   }
 
   componentDidUpdate() {
-    if (this.state.progress < 100 && this.state.play && this.state.reset === false) {
+    if (
+      this.state.progress < 100 &&
+      this.state.play &&
+      this.state.reset === false
+    ) {
       setTimeout(
         () =>
           this.setState(
@@ -40,19 +44,32 @@ export default class Playlist extends Component {
         40
       );
     }
+
+    // Due to how componentDidUpdate works, this makes sure that after it runs, it does not set progress to 1
+    if (this.state.progress === 1 && this.state.reset) {
+      this.setState(
+        (state) => ({
+          progress: state.progress - 1,
+        }),
+        () => {
+          console.log(this.state.progress);
+        }
+      );
+    }
   }
 
   //When user hits the Play Button
   clickPlayButton() {
     this.setState(
       (state) => ({
-        play: !state.play, reset: false
+        play: !state.play,
+        reset: false,
       }),
       () => console.log(this.state.play, this.state.progress)
     );
   }
 
-  //When user hits the Reset Button. I put -1 because componentDidUpdate runs after each setState
+  //When user hits the Reset Button. 
   clickResetButton() {
     this.setState({
       reset: true,
@@ -86,7 +103,7 @@ export default class Playlist extends Component {
           <SaveButton />
           <DownloadButton />
           <DrumKitSettings />
-          <LoopsPanel  className="playListPanel"/>
+          <LoopsPanel className="playListPanel" />
         </div>
         <PlayListPanel
           playState={this.state.play}
