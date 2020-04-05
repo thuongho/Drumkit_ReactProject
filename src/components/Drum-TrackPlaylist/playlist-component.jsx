@@ -26,13 +26,13 @@ export default class Playlist extends Component {
   }
 
   componentDidUpdate() {
-    if (this.state.progress <= 100) {
+    if (this.state.progress <= 100 && this.state.play) {
       setTimeout(
         () =>
           this.setState({
             progress: this.state.progress + 1,
           }),
-        20
+        40
       );
     } else {
       setTimeout(() =>
@@ -48,18 +48,15 @@ export default class Playlist extends Component {
       (state) => ({
         play: !state.play,
       }),
-      () => console.log(this.state.play)
+      () => console.log(this.state.play, this.state.progress)
     );
   }
 
-  setProgress() {
-    this.setState(
-      (state) => ({
-        progress: state.progress + 1,
-      }),
-      () => console.log(this.state.progress)
-    );
-  }
+  // setProgress() {
+  //   this.setState(
+  //     {progress: 0}
+  //   )
+  // }
 
   render() {
     return (
@@ -72,7 +69,7 @@ export default class Playlist extends Component {
             className="playButton"
             onClick={() => {
               this.createConsole();
-              this.setProgress();
+              // this.setProgress();
             }}
           >
             Play Button
