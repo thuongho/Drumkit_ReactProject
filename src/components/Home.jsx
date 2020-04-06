@@ -115,6 +115,15 @@ import whip from "../sounds/whip.mp3";
 import ugh from "../sounds/ugh.mp3";
 
 export default class Home extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      
+    }
+  }
+
   render() {
     return (
       <div className="main">
