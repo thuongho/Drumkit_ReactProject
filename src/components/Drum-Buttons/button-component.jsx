@@ -9,7 +9,7 @@ class Button extends Component {
     this.state = {
       isPlaying: false,
       code: this.props.code,
-      source: this.props.source
+      source: this.props.source,
     };
 
     this._playSound = this._playSound.bind(this);
@@ -24,7 +24,7 @@ class Button extends Component {
 
   //Removes EL before component is destroyed.
   componentWillUnmount() {
-    window.removeEventListener("keydown", this._playSound); 
+    window.removeEventListener("keydown", this._playSound);
   }
 
   _playSound(event) {
@@ -37,11 +37,14 @@ class Button extends Component {
 
     const { state } = this.props;
 
-    if (state !== undefined) {
-      state(this.state.code, this.state.source, this.state.isPlaying);
+    if (this.state.isPlaying) {
+      if (state !== undefined) {
+        state(this.state.code, this.state.source, this.state.isPlaying);
+      }
     }
   }
 
+  
   _onTransitionEnd(event) {
     this.setState({ isPlaying: false });
   }

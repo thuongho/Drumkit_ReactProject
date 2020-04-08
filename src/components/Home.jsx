@@ -160,7 +160,7 @@ export default class Home extends Component {
               bigText="ride"
               code={51}
               source={ride}
-              
+              state={this.stateTest}
             />
             <Button
               className="drumKit snare1"
@@ -168,6 +168,7 @@ export default class Home extends Component {
               bigText="snare1"
               code={52}
               source={snare1}
+              state={this.stateTest}
             />
             <Button
               className="drumKit snare2"
@@ -175,6 +176,7 @@ export default class Home extends Component {
               bigText="snare2"
               code={53}
               source={snare2}
+              state={this.stateTest}
             />
             <Button
               className="drumKit snare808"
@@ -182,6 +184,7 @@ export default class Home extends Component {
               bigText="snare808"
               code={54}
               source={snare808}
+              state={this.stateTest}
             />
             <Button
               className="drumKit snarebig"
@@ -189,6 +192,7 @@ export default class Home extends Component {
               bigText="snare4"
               code={55}
               source={snarebig}
+              state={this.stateTest}
             />
             <Button
               className="drumKit snarebrute"
@@ -196,6 +200,7 @@ export default class Home extends Component {
               bigText="snare5"
               code={56}
               source={snarebrute}
+              state={this.stateTest}
             />
             <Button
               className="drumKit snarelofi02"
@@ -203,6 +208,7 @@ export default class Home extends Component {
               bigText="snare6"
               code={57}
               source={snarelofi}
+              state={this.stateTest}
             />
             <Button
               className="drumKit snaremodular"
@@ -210,6 +216,7 @@ export default class Home extends Component {
               bigText="snare7"
               code={48}
               source={snaremodular}
+              state={this.stateTest}
             />
             <Button
               className="drumKit snaresumo"
@@ -217,6 +224,7 @@ export default class Home extends Component {
               bigText="snare8"
               code={189}
               source={snaresumo}
+              state={this.stateTest}
             />
             <Button
               className="drumKit stick"
@@ -224,6 +232,7 @@ export default class Home extends Component {
               bigText="stick"
               code={187}
               source={stick}
+              state={this.stateTest}
             />
           </div>
           <div className="two">
@@ -233,6 +242,7 @@ export default class Home extends Component {
               bigText="hat"
               code={81}
               source={hat}
+              state={this.stateTest}
             />
             <Button
               className="drumKit hihat"
@@ -240,6 +250,7 @@ export default class Home extends Component {
               bigText="hihat"
               code={87}
               source={hihat}
+              state={this.stateTest}
             />
             <Button
               className="drumKit claves"
@@ -247,6 +258,7 @@ export default class Home extends Component {
               bigText="claves"
               code={69}
               source={claves}
+              state={this.stateTest}
             />
             <Button
               className="drumKit triangle"
@@ -254,6 +266,7 @@ export default class Home extends Component {
               bigText="triangle"
               code={82}
               source={triangle}
+              state={this.stateTest}
             />
             <Button
               className="drumKit shakershuffle"
@@ -261,6 +274,7 @@ export default class Home extends Component {
               bigText="shaker1"
               code={84}
               source={shaker1}
+              state={this.stateTest}
             />
             <Button
               className="drumKit crash2"
@@ -268,6 +282,7 @@ export default class Home extends Component {
               bigText="crash1"
               code={89}
               source={crash1}
+              state={this.stateTest}
             />
             <Button
               className="drumKit crashtape"
@@ -275,6 +290,7 @@ export default class Home extends Component {
               bigText="crash2"
               code={85}
               source={crash2}
+              state={this.stateTest}
             />
             <Button
               className="drumKit conga2"
@@ -282,6 +298,7 @@ export default class Home extends Component {
               bigText="conga1"
               code={73}
               source={conga1}
+              state={this.stateTest}
             />
             <Button
               className="drumKit conga4"
@@ -289,6 +306,7 @@ export default class Home extends Component {
               bigText="conga2"
               code={79}
               source={conga2}
+              state={this.stateTest}
             />
             <Button
               className="drumKit cowbell808"
@@ -296,6 +314,7 @@ export default class Home extends Component {
               bigText="cowbell1"
               code={80}
               source={cowbell1}
+              state={this.stateTest}
             />
             <Button
               className="drumKit perchollow"
@@ -303,6 +322,7 @@ export default class Home extends Component {
               bigText="perc1"
               code={219}
               source={perc1}
+              state={this.stateTest}
             />
             <Button
               className="drumKit percnasty"
@@ -310,6 +330,7 @@ export default class Home extends Component {
               bigText="perc2"
               code={221}
               source={perc2}
+              state={this.stateTest}
             />
           </div>
           <div className="three">
@@ -319,6 +340,7 @@ export default class Home extends Component {
               bigText="tom"
               code={65}
               source={tom}
+              state={this.stateTest}
             />
             <Button
               className="drumKit tom2"
@@ -326,6 +348,7 @@ export default class Home extends Component {
               bigText="tom2"
               code={83}
               source={tom2}
+              state={this.stateTest}
             />
             <Button
               className="drumKit tom808"
@@ -333,6 +356,7 @@ export default class Home extends Component {
               bigText="tom808"
               code={68}
               source={tom808}
+              state={this.stateTest}
             />
             <Button
               className="drumKit tomanalog"
@@ -340,6 +364,7 @@ export default class Home extends Component {
               bigText="tom4"
               code={70}
               source={tom4}
+              state={this.stateTest}
             />
             <Button
               className="drumKit tomfm"
@@ -347,6 +372,7 @@ export default class Home extends Component {
               bigText="tom5"
               code={71}
               source={tomfm}
+              state={this.stateTest}
             />
             <Button
               className="drumKit tomrototom"
@@ -354,6 +380,7 @@ export default class Home extends Component {
               bigText="tom6"
               code={72}
               source={tom6}
+              state={this.stateTest}
             />
             <Button
               className="drumKit tomshort"
@@ -361,6 +388,7 @@ export default class Home extends Component {
               bigText="tom7"
               code={74}
               source={tom7}
+              state={this.stateTest}
             />
             <Button
               className="drumKit click"
@@ -368,6 +396,7 @@ export default class Home extends Component {
               bigText="click"
               code={75}
               source={click}
+              state={this.stateTest}
             />
             <Button
               className="drumKit elephant"
@@ -375,6 +404,7 @@ export default class Home extends Component {
               bigText="elephant"
               code={76}
               source={elephant}
+              state={this.stateTest}
             />
             <Button
               className="drumKit gun"
@@ -382,6 +412,7 @@ export default class Home extends Component {
               bigText="gun"
               code={186}
               source={gun}
+              state={this.stateTest}
             />
             <Button
               className="drumKit moan"
@@ -389,6 +420,7 @@ export default class Home extends Component {
               bigText="moan"
               code={222}
               source={moan}
+              state={this.stateTest}
             />
           </div>
           <div className="four">
@@ -398,6 +430,7 @@ export default class Home extends Component {
               bigText="kick1"
               code={90}
               source={kick}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick3"
@@ -405,6 +438,7 @@ export default class Home extends Component {
               bigText="kick2"
               code={88}
               source={kick2}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick808"
@@ -412,6 +446,7 @@ export default class Home extends Component {
               bigText="kick3"
               code={67}
               source={kick3}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick-big"
@@ -419,6 +454,7 @@ export default class Home extends Component {
               bigText="kick4"
               code={86}
               source={kickbig}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick-classic"
@@ -426,6 +462,7 @@ export default class Home extends Component {
               bigText="kick5"
               code={66}
               source={kick5}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick-deep"
@@ -433,6 +470,7 @@ export default class Home extends Component {
               bigText="kick6"
               code={78}
               source={kick6}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick-heavy"
@@ -440,6 +478,7 @@ export default class Home extends Component {
               bigText="kick7"
               code={77}
               source={kick7}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick-plain"
@@ -447,6 +486,7 @@ export default class Home extends Component {
               bigText="kick8"
               code={188}
               source={kick8}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick-zapper"
@@ -454,6 +494,7 @@ export default class Home extends Component {
               bigText="kick9"
               code={190}
               source={kick9}
+              state={this.stateTest}
             />
             <Button
               className="drumKit kick-softly"
@@ -461,6 +502,7 @@ export default class Home extends Component {
               bigText="kick10"
               code={191}
               source={kick10}
+              state={this.stateTest}
             />
           </div>
         </div>
@@ -473,6 +515,7 @@ export default class Home extends Component {
               bigText="airhorn"
               code={103}
               source={airhorn}
+              state={this.stateTest}
             />
             <Button
               className="drumKit allhits"
@@ -480,6 +523,7 @@ export default class Home extends Component {
               bigText="allhits"
               code={104}
               source={allhits}
+              state={this.stateTest}
             />
             <Button
               className="drumKit anotherone"
@@ -487,6 +531,7 @@ export default class Home extends Component {
               bigText="Khaled"
               code={105}
               source={djkhaled}
+              state={this.stateTest}
             />
           </div>
           <div className="numTwo">
@@ -496,6 +541,7 @@ export default class Home extends Component {
               bigText="yeah"
               code={100}
               source={yeah}
+              state={this.stateTest}
             />
             <Button
               className="drumKit damnson"
@@ -503,6 +549,7 @@ export default class Home extends Component {
               bigText="Damn"
               code={101}
               source={damn}
+              state={this.stateTest}
             />
             <Button
               className="drumKit rickross"
@@ -510,6 +557,7 @@ export default class Home extends Component {
               bigText="rickRoss"
               code={102}
               source={rickross}
+              state={this.stateTest}
             />
           </div>
           <div className="numThree">
@@ -519,6 +567,7 @@ export default class Home extends Component {
               bigText="beaches"
               code={97}
               source={beaches}
+              state={this.stateTest}
             />
             <Button
               className="drumKit whip"
@@ -526,6 +575,7 @@ export default class Home extends Component {
               bigText="whip"
               code={98}
               source={whip}
+              state={this.stateTest}
             />
             <Button
               className="drumKit ugh"
@@ -533,6 +583,7 @@ export default class Home extends Component {
               bigText="ugh"
               code={99}
               source={ugh}
+              state={this.stateTest}
             />
           </div>
         </div>
