@@ -8,6 +8,8 @@ class Button extends Component {
 
     this.state = {
       isPlaying: false,
+      code: this.props.code,
+      source: this.props.source
     };
 
     this._playSound = this._playSound.bind(this);
@@ -22,18 +24,23 @@ class Button extends Component {
 
   //Removes EL before component is destroyed.
   componentWillUnmount() {
-    window.removeEventListener("keydown", this._playSound);
-    
+    window.removeEventListener("keydown", this._playSound); 
   }
 
   _playSound(event) {
-    if (event.keyCode === this.props.code || event.type === "click") { // Checks if the button pressed has the same source 
+    if (event.keyCode === this.props.code || event.type === "click") {
+      // Checks if the button pressed has the same source
       this.setState({ isPlaying: true });
       this.Audio.currentTime = 0;
       this.Audio.play();
     }
-  }
 
+    const { state } = this.props;
+
+    if (state !== undefined) {
+      state(this.state.code, this.state.source, this.state.isPlaying);
+    }
+  }
 
   _onTransitionEnd(event) {
     this.setState({ isPlaying: false });
@@ -46,7 +53,7 @@ class Button extends Component {
       : `${className}`;
     return (
       <button
-        onClick={this._playSound}
+        onClick={() => this._playSound}
         onTransitionEnd={this._onTransitionEnd}
         className={isPlaying}
         style={style}
@@ -57,7 +64,5 @@ class Button extends Component {
     );
   }
 }
-
-
 
 export default Button;

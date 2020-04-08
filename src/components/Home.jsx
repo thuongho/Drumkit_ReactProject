@@ -115,13 +115,21 @@ import whip from "../sounds/whip.mp3";
 import ugh from "../sounds/ugh.mp3";
 
 export default class Home extends Component {
-
   constructor(props) {
     super(props);
 
     this.state = {
-      test: 'Testing'
-    }
+      code: 0,
+      source: 'one',
+      status: false,
+    };
+
+    this.stateTest = this.stateTest.bind(this)
+  }
+
+  stateTest(data, data2, data3) {
+    this.setState({ code: data, source: data2, status: data3 });
+    console.log(this.state.code, this.state.source, this.state.status)
   }
 
   render() {
@@ -136,6 +144,7 @@ export default class Home extends Component {
               bigText="clap"
               code={49}
               source={clap}
+              state={this.stateTest}
             />
             <Button
               className="drumKit snap"
@@ -143,6 +152,7 @@ export default class Home extends Component {
               bigText="snap"
               code={50}
               source={snap}
+              state={this.stateTest}
             />
             <Button
               className="drumKit ride"
@@ -150,6 +160,7 @@ export default class Home extends Component {
               bigText="ride"
               code={51}
               source={ride}
+              
             />
             <Button
               className="drumKit snare1"
