@@ -16,16 +16,16 @@ export default class PlayListPanel extends Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    if (nextProps.playState !== prevState.playValue) {
-      return { playValue: nextProps.playState };
+    if (nextProps.playState !== prevState.playValue || nextProps.recordState !== prevState.recordValue) {
+      return { playValue: nextProps.playState, recordValue: nextProps.recordState };
     } else return null;
   }
 
-//Only Activates when the Record Button is Pressed
+//Only Activates when the Record Button is Pressed (true)
  createLoop() {
    if (this.state.recordValue) {
      return(
-       <div>
+       <div className="loops">
          Hello Mate
        </div>
      )
