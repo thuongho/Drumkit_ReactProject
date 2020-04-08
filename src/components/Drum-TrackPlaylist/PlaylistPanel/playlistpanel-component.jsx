@@ -18,6 +18,7 @@ export default class PlayListPanel extends Component {
   }
 
   render() {
+    
     return (
       <div className="playlist-Panel">
         <div
@@ -29,6 +30,8 @@ export default class PlayListPanel extends Component {
           style={{ left: `${this.props.progress}%` }}
         ></div>
         <div className="loader"> </div>
+
+        <div className="loop"></div>
       </div>
     );
   }
