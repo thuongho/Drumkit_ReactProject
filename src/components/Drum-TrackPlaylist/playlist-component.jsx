@@ -13,7 +13,7 @@ import "./playlist-component.css";
 export default class Playlist extends Component {
   constructor(props) {
     super(props);
-    this.clickPlayButton = this.clickPlayButton.bind(this);
+    
 
     this.state = {
       reset: false,
@@ -23,6 +23,9 @@ export default class Playlist extends Component {
       download: false,
       progress: 0,
     };
+
+    this.clickPlayButton = this.clickPlayButton.bind(this);
+    this.clickRecordButton = this.clickRecordButton.bind(this);
   }
 
   componentDidUpdate() {
@@ -45,7 +48,7 @@ export default class Playlist extends Component {
       );
     }
 
-    // Due to how componentDidUpdate works, this makes sure that after it runs, it does not set progress to 1git 
+    // Due to how componentDidUpdate works, this makes sure that after it runs, it does not set progress to 1 digit
     if (this.state.progress === 1 && this.state.reset) {
       this.setState(
         (state) => ({
@@ -69,7 +72,15 @@ export default class Playlist extends Component {
     );
   }
 
-  //When user hits the Reset Button. 
+  clickRecordButton() {
+    this.setState((state) => ({
+      record: !state.record,
+      reset: false,
+    }));
+    // console.log(this.state.record)
+  }
+
+  //When user hits the Reset Button.
   clickResetButton() {
     this.setState({
       reset: true,
@@ -91,7 +102,14 @@ export default class Playlist extends Component {
           >
             Reset Button
           </button>
-          <RecordButton />
+          <button
+            className="recordButton"
+            onClick={() => {
+              this.clickRecordButton();
+            }}
+          >
+            Record Button
+          </button>
           <button
             className="playButton"
             onClick={() => {
@@ -108,6 +126,7 @@ export default class Playlist extends Component {
         <PlayListPanel
           playState={this.state.play}
           progress={this.state.progress}
+          recordState={this.state.record}
         />
       </div>
     );
