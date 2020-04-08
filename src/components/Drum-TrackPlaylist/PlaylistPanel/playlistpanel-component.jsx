@@ -12,25 +12,27 @@ export default class PlayListPanel extends Component {
       recordValue: this.props.recordState,
     };
 
-    this.createLoop = this.createLoop.bind(this)
+    this.createLoop = this.createLoop.bind(this);
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    if (nextProps.playState !== prevState.playValue || nextProps.recordState !== prevState.recordValue) {
-      return { playValue: nextProps.playState, recordValue: nextProps.recordState };
+    if (
+      nextProps.playState !== prevState.playValue ||
+      nextProps.recordState !== prevState.recordValue
+    ) {
+      return {
+        playValue: nextProps.playState,
+        recordValue: nextProps.recordState,
+      };
     } else return null;
   }
 
-//Only Activates when the Record Button is Pressed (true)
- createLoop() {
-   if (this.state.recordValue) {
-     return(
-       <div className="loops">
-         Hello Mate
-       </div>
-     )
-   }
- }
+  //Only Activates when the Record Button is Pressed (true)
+  createLoop() {
+    if (this.state.recordValue) {
+      return <div className="loop">Hello Mate</div>;
+    }
+  }
 
   render() {
     // //CreateLoop creates the div row when Play Button is pressed

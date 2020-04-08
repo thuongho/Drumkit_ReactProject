@@ -9,8 +9,13 @@
     float: left;
 }
 
-.loops {
+.loop {
     background-color: pink;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
 }
 
 
