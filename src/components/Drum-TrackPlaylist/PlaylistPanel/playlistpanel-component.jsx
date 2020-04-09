@@ -10,6 +10,8 @@ export default class PlayListPanel extends Component {
       //Checks whether play button is pressed
       playValue: this.props.playState,
       recordValue: this.props.recordState,
+      code: this.props.panelCode,
+      source: this.props.panelSource,
     };
 
     this.createLoop = this.createLoop.bind(this);
@@ -50,8 +52,9 @@ export default class PlayListPanel extends Component {
           className="progressLine"
           style={{ left: `${this.props.progress}%` }}
         ></div>
-        <div className="loader"> </div>
+        <div className="loader"></div>
         {this.createLoop()}
+        <div>{this.state.source}</div>
       </div>
     );
   }

@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import { ResetButton } from "./PlaylistButtons/ResetButton/resetbutton-component";
-import { RecordButton } from "./PlaylistButtons/RecordButton/recordbutton-component";
 
 import { SaveButton } from "./PlaylistButtons/SaveButton/savebutton-component";
 import { DownloadButton } from "./PlaylistButtons/DownloadButton/downloadbutton-component";
@@ -13,7 +11,6 @@ import "./playlist-component.css";
 export default class Playlist extends Component {
   constructor(props) {
     super(props);
-    
 
     this.state = {
       reset: false,
@@ -22,6 +19,8 @@ export default class Playlist extends Component {
       save: false,
       download: false,
       progress: 0,
+      code: this.props.playListCode,
+      source: this.props.playListSource,
     };
 
     this.clickPlayButton = this.clickPlayButton.bind(this);
@@ -127,6 +126,8 @@ export default class Playlist extends Component {
           playState={this.state.play}
           progress={this.state.progress}
           recordState={this.state.record}
+          panelCode={this.state.code}
+          panelSource={this.state.source}
         />
       </div>
     );

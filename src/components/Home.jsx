@@ -587,7 +587,7 @@ export default class Home extends Component {
             />
           </div>
         </div>
-        <Playlist />
+        <Playlist  playListCode={this.state.code} playListSource={this.state.source}  />
       </div>
     );
   }
